@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<title>Старый дом</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- Шапка -->
+  <header class="header">
+    <div class="header-inner">
+
+      <h1 class="title">
+        РЕБЁНОК БЛОКАДЫ:<br>
+        МАЛЕНЬКИЙ ЧЕЛОВЕК В БОЛЬШОМ ИСПЫТАНИИ
+      </h1>
+
+      <div class="lead">
+        <p>Перед вами дом в блокадном Ленинграде.</p>
+        <p>Окна дома заклеены крест-накрест, чтобы снизить воздействие ударной волны на стекло.</p>
+        <p><strong>За каждым окном — память.</strong></p>
+
+        <p class="invite">Приглашаем вас открыть истории этого дома!</p>
+        <p>Начните со входа в парадную.</p>
+        <p>Поднимайтесь по этажам — шаг за шагом.</p>
+        <p><strong>Коснитесь окна — и позвольте памяти заговорить.</strong></p>
+
+        <p class="note">
+          Эти истории записаны в ходе интервью с очевидцами событий, жителями блокадного города и их близкими.
+        </p>
+
+        <p class="note">
+          Некоторые окна пока молчат. Но они обязательно откроются — и воспоминания оживут.
+        </p>
+      </div>
+      <div class="motto">
+        Мы не пересказываем историю — мы даём ей прозвучать.
+      </div>
+      <div class="audio">
+        <button class="audio-btn" id="audioBtn" type="button">Включить звук</button>
+        <audio id="bgAudio" loop preload="auto">
+          <source src="audio/wind.mp3" type="audio/mpeg">
+        </audio>
+      </div>
+
+    </div>
+  </header>
+  <!-- Дом -->
+  <main class="main">
+    <section class="scene">
+      <div class="wrapper">
+        <img src="house.jpg" class="house" id="house" alt="Дом в блокадном Ленинграде">
+        <!-- 4 этаж -->
+        <div class="hotspot" style="top:28.06%; left:93.33%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>         
+        <div class="hotspot" style="top:27.83%; left:81.56%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:27.6%; left:69.38%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="highlight" style="top:27.6%; left:69.38%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:27.6%; left:57.05%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:27.53%; left:44.83%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:27.68%; left:29.72%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:28.13%; left:18.00%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <!-- 3 этаж -->
+        <div class="hotspot" style="top:38.68%; left:92.67%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:38.68%; left:81.33%; width:7.5%; height:7%;" onclick="openPopup('floor3_window6')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:38.45%; left:69.49%; width:7.5%; height:7%;" onclick="openPopup('floor3_window5')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:38.29%; left:57.05%; width:7.5%; height:7%;" onclick="openPopup('floor3_window4')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:38.29%; left:44.83%; width:7.5%; height:7%;" onclick="openPopup('floor3_window3')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:38.53%; left:30.00%; width:7.5%; height:7%" >
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:38.68%; left:17.89%; width:7.5%; height:7%;">
+            <div class="highlight"></div>
+        </div>
+        <!-- 2 этаж -->
+        <div class="hotspot" style="top:50.53%; left:92.22%; width:7.5%; height:7%;" onclick="openPopup('floor2_window7')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:50.30%; left:81.00%; width:7.5%; height:7%;" onclick="openPopup('floor2_window6')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:50.26%; left:68.94%; width:7.5%; height:7%;" onclick="openPopup('floor2_window5')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:49.95%; left:56.94%; width:7.5%; height:7%;" onclick="openPopup('floor2_window4')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:49.95%; left:44.72%; width:7.5%; height:7%;" onclick="openPopup('floor2_window3')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:49.95%; left:29.94%; width:7.5%; height:7%;" onclick="openPopup('floor2_window2')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:50.30%; left:18.00%; width:7.5%; height:7%;" onclick="openPopup('floor2_window1')">
+            <div class="highlight"></div>
+        </div>
+        <!-- 1 этаж -->
+        <div class="hotspot" style="top:62.22%; left:92.00%; width:7.5%; height:7%;" onclick="openPopup('floor1_window7')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:62.30%; left:80.89%; width:7.5%; height:7%;" onclick="openPopup('floor1_window6')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:62.14%; left:68.89%; width:7.5%; height:7%;" onclick="openPopup('floor1_window5')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:62.14%; left:56.89%; width:7.5%; height:7%;" onclick="openPopup('floor1_window4')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:62.07%; left:44.67%; width:7.5%; height:7%;" onclick="openPopup('floor1_window3')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:62.14%; left:30.00%; width:7.5%; height:7%;" onclick="openPopup('floor1_window2')">
+            <div class="highlight"></div>
+        </div>
+        <div class="hotspot" style="top:62.14%; left:18.00%; width:7.5%; height:7%;" onclick="openPopup('floor1_window1')">
+            <div class="highlight"></div>
+        </div>
+        <!-- Арка -->
+        <div class="hotspot" style="top:72.69%; left:18.33%; width:11%; height:13%;" onclick="openVideo('17')">
+            <div class="highlight"></div>
+        </div>
+        <!-- Дверь -->
+        <div class="hotspot" style="top:73.46%; left:29.89%; width:8%; height:13%;" onclick="openPopup('entrance')">
+            <div class="highlight"></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <div class="popup" id="popup" onclick="closePopup()">
+    <div class="popup-content" onclick="event.stopPropagation()">
+      <button class="popup-close" onclick="closePopup()" aria-label="Закрыть">×</button>
+      <h3 id="popup-title"></h3>
+      <p id="popup-description"></p>
+      <video
+        id="popup-video"
+        controls
+        playsinline
+        preload="metadata">
+        <source src="" type="video/mp4">
+      </video>
+    </div>
+  </div>
+  <canvas id="snow"></canvas>
+<script>
+const bgAudio = document.getElementById("bgAudio");
+const audioBtn = document.getElementById("audioBtn");
+let audioOn = false;
+
+audioBtn?.addEventListener("click", async () => {
+    try {
+    if (!audioOn) {
+        await bgAudio.play();
+        audioOn = true;
+        audioBtn.textContent = "Выключить звук";
+    } else {
+        bgAudio.pause();
+        audioOn = false;
+        audioBtn.textContent = "Включить звук";
+    }
+    } catch (e) {
+     console.log(e);
+    }
+});
+
+const house = document.getElementById("house");
+window.addEventListener("scroll", () => {
+    const pos = house.getBoundingClientRect().top;
+    if (pos < window.innerHeight / 1.2) house.classList.add("show");
+});
+const windowsData = {
+
+  /* ===== ВХОД В ПАРАДНУЮ ===== */
+  entrance: {
+    title: "Выпуск 1. Начало большого разговора",
+    description:
+      "Вход в парадную этого дома. Здесь начинается история проекта «Ребёнок блокады». Первые голоса, первые воспоминания, первый шаг в память.",
+    video: "videos/video1.mp4"
+  },
+
+  /* ===== 1 ЭТАЖ ===== */
+  floor1_window1: {
+    title: "Выпуск 2. Героический подвиг мамы",
+    description:
+      "История Маргариты Ильиничны. Рассказ о материнской силе, выборе и ответственности в условиях блокады.",
+    video: "videos/video2.mp4"
+  },
+
+  floor1_window2: {
+    title: "Выпуск 3. Скорее бы воскресенье",
+    description:
+      "История Германа Александровича. Детские ожидания, редкие радости и хрупкая надежда в блокадном городе.",
+    video: "videos/video3.mp4"
+  },
+
+  floor1_window3: {
+    title: "Выпуск 4. Кукла",
+    description:
+      "История Нины Фёдоровны. Воспоминание о вещи, ставшей символом детства и утраченного мира.",
+    video: "videos/video4.mp4"
+  },
+
+  floor1_window4: {
+    title: "Выпуск 5. История Елены Сергеевны",
+    description:
+      "Председатель Санкт-Петербургской общественной организации «Жители блокадного Ленинграда» делится личными воспоминаниями и размышлениями о пережитом.",
+    video: "videos/video5.mp4"
+  },
+
+  floor1_window5: {
+    title: "Выпуск 6. Ёлки в блокадном Ленинграде",
+    description:
+      "История Германа Александровича. Как даже в самые тяжёлые годы находили место празднику и детской радости.",
+    video: "videos/video6.mp4"
+  },
+
+  floor1_window6: {
+    title: "Выпуск 7. Нити жизни",
+    description:
+      "Хлеб, доноры, радио и тонкие нити, которые связывали людей и помогали выжить в осаждённом городе.",
+    video: "videos/video7.mp4"
+  },
+
+  floor1_window7: {
+    title: "Выпуск 8. Как добыть ёлку?",
+    description:
+      "История Леры Ивановны. О поиске праздника и вере в чудо среди зимы и голода.",
+    video: "videos/video8.mp4"
+  },
+
+  /* ===== 2 ЭТАЖ ===== */
+  floor2_window1: {
+    title: "Выпуск 9. Когда главным было сохранить жизнь",
+    description:
+      "Разговор о блокадных больницах, санитарных условиях и эвакуации детей. О выборе между страхом и надеждой.",
+    video: "videos/video9.mp4"
+  },
+
+  floor2_window2: {
+    title: "Выпуск 10. Эвакуация и возвращение",
+    description:
+      "История Ирмы Александровны. Дорога из осаждённого города и путь обратно — к дому и памяти.",
+    video: "videos/video10.mp4"
+  },
+
+  floor2_window3: {
+    title: "Выпуск 11. Какой момент запомнился больше всего?",
+    description:
+      "История Елены Сергеевны. Воспоминание о хлебе, страхе и неожиданной помощи в самом тяжёлом испытании.",
+    video: "videos/video11.mp4"
+  },
+
+  floor2_window4: {
+    title: "Выпуск 12. Деятельность организации",
+    description:
+      "Разговор о работе Санкт-Петербургской общественной организации «Жители блокадного Ленинграда» и сохранении памяти.",
+    video: "videos/video12.mp4"
+  },
+
+  floor2_window5: {
+    title: "Выпуск 13. Как выжил Ленинград",
+    description:
+      "Медицина, быт, небо и люди. Разные стороны жизни блокадного города, рассказанные очевидцами.",
+    video: "videos/video13.mp4"
+  },
+
+  floor2_window6: {
+    title: "Выпуск 14. Главный элемент — мужество",
+    description:
+      "Голод, холод и тьма. О том, почему мужество стало главным условием выживания.",
+    video: "videos/video14.mp4"
+  },
+
+  floor2_window7: {
+    title: "Выпуск 15. Ещё одна история блокадницы",
+    description:
+      "Личный рассказ, дополняющий мозаику памяти о детстве в осаждённом городе.",
+    video: "videos/video15.mp4"
+  },
+
+  /* ===== 3 ЭТАЖ — НИКИТА ВЛАДИМИРОВИЧ БЛАГОВО ===== */
+  floor3_window3: {
+    title: "Память блокадного детства",
+    description:
+      "Никита Владимирович Благово. Разговор без заранее подготовленных тем — живая человеческая память.",
+    video: "videos/video16.mp4"
+  },
+
+  floor3_window4: {
+    title: "Личный голос памяти",
+    description:
+      "История Никиты Владимировича Благово. Боль, сила духа и надежда, пережившие блокаду.",
+    video: "videos/video17.mp4"
+  },
+  floor3_window5: {
+    title: "Маленький человек в большом испытании",
+    description:
+      "Размышления о памяти, детстве и том, что остаётся с человеком на всю жизнь.",
+    video: "videos/video18.mp4"
+  },
+
+  floor3_window6: {
+    title: "Живая история",
+    description:
+      "История, рассказанная не по учебнику, а человеческим голосом — честно и без прикрас.",
+    video: "videos/video19.mp4"
+  }
+
+};
+
+function openPopup(key) {
+    const data = windowsData[key];
+
+    document.getElementById("popup-title").innerText = data.title;
+    document.getElementById("popup-description").innerText = data.description;
+    document.getElementById("popup-video").src = data.video + "?autoplay=1";
+
+    document.getElementById("popup").classList.add("active");
+}
+
+function closePopup() {
+    document.getElementById("popup").classList.remove("active");
+    document.getElementById("popup-video").src = "";
+}
+
+document.querySelector(".wrapper").addEventListener("click", function(e){
+
+    const rect = this.getBoundingClientRect();
+
+    const x = ((e.clientX - rect.left) / rect.width) * 100;
+    const y = ((e.clientY - rect.top) / rect.height) * 100;
+
+    console.log("top:", y.toFixed(2) + "%", 
+                "left:", x.toFixed(2) + "%");
+});
+
+window.addEventListener("scroll",()=>{
+    const pos = house.getBoundingClientRect().top;
+    if(pos < window.innerHeight/1.3){
+        house.classList.add("show");
+    }
+});
+
+const canvas = document.getElementById("snow");
+const ctx = canvas.getContext("2d");
+
+function resizeSnow() {
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+}
+resizeSnow();
+
+const flakes = [];
+const FLAKES_COUNT = 140;
+
+for (let i = 0; i < FLAKES_COUNT; i++) {
+    flakes.push({
+        x: Math.random() * canvas.width,
+        y: Math.random() * canvas.height,
+        r: Math.random() * 2.2 + 0.8,
+        speed: Math.random() * 0.6 + 0.4
+    });
+}
+
+let angle = 0;
+
+function drawSnow() {
+    ctx.clearRect(0, 0, canvas.width, canvas.height);
+    ctx.beginPath();
+
+    for (const f of flakes) {
+        ctx.moveTo(f.x, f.y);
+        ctx.arc(f.x, f.y, f.r, 0, Math.PI * 2);
+    }
+
+    ctx.fillStyle = "rgba(255,255,255,0.85)";
+    ctx.fill();
+
+    angle += 0.01;
+
+    for (const f of flakes) {
+        f.y += f.speed * f.speed + 0.5;
+        f.x += Math.sin(angle) * 0.3;
+
+        if (f.y > canvas.height + 10) {
+            f.y = -10;
+            f.x = Math.random() * canvas.width;
+        }
+    }
+
+    requestAnimationFrame(drawSnow);
+}
+
+drawSnow();
+
+window.addEventListener("resize", resizeSnow);
+</script>
+</body>
+</html>
