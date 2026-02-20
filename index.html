@@ -5,7 +5,7 @@
 <title>РЕБЁНОК БЛОКАДЫ</title>
 <link rel="stylesheet" href="style.css">
 <style>
-  /* Дополнительный стиль для блока подкаста */
+ 
   #podcast-block {
     display: none;
     text-align: center;
@@ -20,7 +20,7 @@
   }
   #popup-audio {
     width: 100%;
-    filter: invert(100%); /* Чтобы плеер лучше смотрелся на темном фоне */
+    filter: invert(100%); 
   }
   .site-footer {
     background: rgba(20, 20, 20, 0.8);
@@ -172,13 +172,13 @@
 
 <script>
 const windowsData = {
-  // 4 ЭТАЖ (Заглушка)
+
   "silent": {
     title: "Окно пока молчит",
     description: "Но оно обязательно откроется — и воспоминания оживут."
   },
 
-  // 3 ЭТАЖ - ПОДКАСТ
+ 
   "floor3_window1": {
     title: "Ребёнок блокады: Алентина Яковлевна",
     description: "Новый год - это время чудес. И приближающийся 2026 год - не исключение. А случилось нечто поистине невероятное: спустя 80 лет после блокады Ленинграда из Санкт‑Петербурга в город Нефтекумск Ставропольского края прибыла посылка для Алентины Яковлевны Комаровой. Однако главное чудо ждало впереди: юнармейцы, обучающиеся ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга, смогли не только поздравить ветерана, но и пообщаться со свидетелем блокады - той самой маленькой девочкой Алей. Юнармейцы поздравили Алентину Яковлевну с наступающим Новым годом и Рождеством! Прощаясь, пообещали быть всегда на связи. Встречу подготовили и провели юнармейцы отряда «Высота209»: Галоян Аида, Соколова Настя, Васильев Фёдор, Гончарова Софья и учителя ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга: руководитель проекта «Ребёнок блокады: Маленький человек в большом испытании» Варсонова Дарья Александровна и куратор юнармейского отряда «Высота 209» Горькавенко Галина Валентиновна.",
@@ -192,7 +192,7 @@ const windowsData = {
     image: "vrach.jpg"
   },
 
-  //okna
+
   entrance: {
     title: "Выпуск №1. Начало большого разговора",
     description:
@@ -200,7 +200,7 @@ const windowsData = {
     video: "https://vkvideo.ru/video_ext.php?oid=-133320449&id=456241549&hd=3"
   },
 
-  /* ===== 1 ЭТАЖ ===== */
+ 
   floor1_window1: {
     title: "Выпуск №2. Героический подвиг мамы",
     description:
@@ -258,7 +258,7 @@ const windowsData = {
     video: "https://vk.com/video_ext.php?oid=-133320449&id=456241591&hash=4df6546b0be87917&hd=3"
   },
 
-  /* ===== 2 ЭТАЖ ===== */
+ 
   floor2_window1: {
       title: "Выпуск №9. Когда главным было сохранить жизнь",
       description: `Основные аспекты выпуска:
@@ -320,7 +320,7 @@ const windowsData = {
     video: "https://vkvideo.ru/video_ext.php?oid=-222015834&id=456239105&hd=3"
   },
 
-  /* ===== 3 ЭТАЖ — НИКИТА ВЛАДИМИРОВИЧ БЛАГОВО ===== */
+
   floor3_window3: {
     title: "Выпуск №1. «День начала блокады врезался в память очень сильной картиной»",
     description:
@@ -377,23 +377,23 @@ function openPopup(key) {
     document.getElementById("popup-title").innerText = data.title;
     document.getElementById("popup-description").innerText = data.description || "";
 
-    // Скрываем всё перед выбором контента
+   
     iframe.style.display = "none";
     iframe.src = "";
     podcastBlock.style.display = "none";
     audio.src = "";
 
     if (data.audio) {
-        // Если это ПОДКАСТ
+       
         podcastBlock.style.display = "block";
         audio.src = data.audio;
         img.src = data.image || "";
     } else if (data.video) {
-        // Если это ВИДЕО
+       
         iframe.style.display = "block";
         iframe.src = data.video;
     } else if (data.image) {
-        // Если просто ФОТО (как во 2 окне 3 этажа)
+       
         podcastBlock.style.display = "block";
         img.src = data.image;
         audio.style.display = "none";
@@ -401,7 +401,7 @@ function openPopup(key) {
 
     document.getElementById("popup").classList.add("active");
 
-    // Глушим фоновый звук ветра, если он играет
+  
     if (audioOn) bgAudio.pause();
 }
 
@@ -415,11 +415,11 @@ function closePopup() {
 
     document.getElementById("popup").classList.remove("active");
 
-    // Возвращаем фоновый звук, если он был включен
+   
     if (audioOn) bgAudio.play();
 }
 
-// Фоновый звук
+
 const bgAudio = document.getElementById("bgAudio");
 const audioBtn = document.getElementById("audioBtn");
 let audioOn = false;
@@ -493,6 +493,7 @@ window.addEventListener("resize", resizeSnow);
 </script>
 </body>
 </html>
+
 
 
 
