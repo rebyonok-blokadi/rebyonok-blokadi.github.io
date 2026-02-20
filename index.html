@@ -22,6 +22,40 @@
     width: 100%;
     filter: invert(100%); /* Чтобы плеер лучше смотрелся на темном фоне */
   }
+  .site-footer {
+    background: rgba(20, 20, 20, 0.8);
+    padding: 60px 20px;
+    margin-top: 50px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+    color: #c8bfae;
+  }
+  .footer-inner {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  .motto {
+    font-size: 24px;
+    font-style: italic;
+    color: #f2eee8;
+    margin-bottom: 50px;
+    font-family: "Georgia", serif;
+  }
+  .credits h3 {
+    color: #f2eee8;
+    margin-bottom: 25px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+  }
+  .credits p {
+    font-size: 15px;
+    line-height: 1.6;
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  .credits strong {
+    color: #fff;
+  }
 </style>
 </head>
 
@@ -107,7 +141,33 @@
       <p id="popup-description" style="margin-top:20px; text-align: left;"></p>
     </div>
   </div>
+<footer class="site-footer">
+    <div class="footer-inner">
+      <blockquote class="motto">
+        «Мы не пересказываем историю — мы даём ей прозвучать»
+      </blockquote>
+      
+      <div class="credits">
+        <h3>Над проектом работали:</h3>
+        
+        <p><strong>Варсонова Дарья Александровна</strong>, руководитель и инициатор проекта «Ребёнок блокады: маленький человек в большом испытании», учитель немецкого языка ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга</p>
+        
+        <p><strong>Котенев Максим и Миронов Максим</strong>, веб-разработчики, обучающиеся 11 «Б» класса ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга</p>
+        
+        <p><strong>Белорыбкин Николай и Лепская Дарья</strong>, видеооператоры, обучающиеся 11 «А» класса ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга</p>
+        
+        <p><strong>Иванова Софья</strong>, видеооператор, обучающаяся 8 «Б» класса ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга</p>
+        
+        <p><strong>Белорыбкин Николай и Варсонова Дарья Александровна</strong>, видеомонтажеры</p>
+        
+        <p><strong>Лукомская Вероника</strong>, иллюстратор, обучающаяся 11 «А» класса ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга</p>
+        
+        <p><strong>Ефимова Анна и Калистратова Василиса</strong>, участники профессиональных проб с ориентацией на музейные профессии «научный сотрудник», «методист», «экскурсовод», обучающиеся 11 «Б» класса ГБОУ гимназия №209 «Павловская гимназия» Центрального района Санкт-Петербурга</p>
+      </div>
+    </div>
+  </footer>
 
+  
 <canvas id="snow"></canvas>
 
 <script>
@@ -433,6 +493,7 @@ window.addEventListener("resize", resizeSnow);
 </script>
 </body>
 </html>
+
 
 
 
